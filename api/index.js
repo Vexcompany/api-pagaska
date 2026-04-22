@@ -22,6 +22,7 @@ app.all('/api/ai/pagaskaai',   require('./ai/pagaskaai'));
 
 // ── Downloader Routes ──────────────────────────────────────
 app.all('/api/downloader/tiktok',      require('./downloader/tiktok'));
+app.all('/api/downloader/instagram', require('./downloader/instagram'));
 app.all('/api/downloader/ytmp3',       require('./downloader/ytmp3'));
 app.all('/api/downloader/ytmp4',       require('./downloader/ytmp4'));
 app.all('/api/downloader/soundcloud',  require('./downloader/soundcloud'));

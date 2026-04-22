@@ -664,7 +664,7 @@
 
     <div class="hero-stats fade-up fade-up-4">
       <div class="stat">
-        <span class="stat-num">16</span>
+        <span class="stat-num">17</span>
         <span class="stat-label">Endpoints</span>
       </div>
       <div class="stat">
@@ -836,7 +836,7 @@
     <div class="section-header">
       <div class="section-icon icon-dl">⬇️</div>
       <div class="section-title">Downloader</div>
-      <div class="section-count">5 endpoints</div>
+      <div class="section-count">6 endpoints</div>
     </div>
     <div class="endpoints-grid">
 
@@ -859,6 +859,31 @@
             <div class="try-row">
               <input class="try-input" placeholder="url: https://www.tiktok.com/@user/video/..." data-key="url" />
               <button class="try-btn" onclick="sendGet(this, '/api/downloader/tiktok', 'url')">▶ Send</button>
+            </div>
+            <div class="response-box"><div class="response-status"><span class="status-dot"></span><span class="response-status-text"></span></div><button class="response-copy" onclick="copyResponse(this)">copy</button><pre class="response-pre"></pre></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Igdl -->
+      <div class="ep-card" onclick="toggleCard(this)">
+        <div class="ep-header">
+          <span class="method-badge method-both">GET/POST</span>
+          <span class="ep-path">/api/downloader/igdl</span>
+          <span class="ep-desc">Instagram Downloader</span>
+          <span class="ep-chevron">▼</span>
+        </div>
+        <div class="ep-body">
+          <div class="params-label">Parameters</div>
+          <table class="params-table">
+            <tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr>
+            <tr><td class="param-name">url</td><td class="param-type">string</td><td class="param-req">✓ Required</td><td class="param-desc">URL Instagram</td></tr>
+          </table>
+          <div class="try-section">
+            <div class="try-label">Try it</div>
+            <div class="try-row">
+              <input class="try-input" placeholder="url: https://www.instagram.com/..." data-key="url" />
+              <button class="try-btn" onclick="sendGet(this, '/api/downloader/igdl', 'url')">▶ Send</button>
             </div>
             <div class="response-box"><div class="response-status"><span class="status-dot"></span><span class="response-status-text"></span></div><button class="response-copy" onclick="copyResponse(this)">copy</button><pre class="response-pre"></pre></div>
           </div>

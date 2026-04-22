@@ -664,7 +664,7 @@
 
     <div class="hero-stats fade-up fade-up-4">
       <div class="stat">
-        <span class="stat-num">17</span>
+        <span class="stat-num">16</span>
         <span class="stat-label">Endpoints</span>
       </div>
       <div class="stat">
@@ -836,7 +836,7 @@
     <div class="section-header">
       <div class="section-icon icon-dl">⬇️</div>
       <div class="section-title">Downloader</div>
-      <div class="section-count">6 endpoints</div>
+      <div class="section-count">5 endpoints</div>
     </div>
     <div class="endpoints-grid">
 
@@ -864,8 +864,8 @@
           </div>
         </div>
       </div>
-
-      <!-- TikTok -->
+      
+      <!-- IG -->
       <div class="ep-card" onclick="toggleCard(this)">
         <div class="ep-header">
           <span class="method-badge method-both">GET/POST</span>
@@ -877,7 +877,7 @@
           <div class="params-label">Parameters</div>
           <table class="params-table">
             <tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr>
-            <tr><td class="param-name">url</td><td class="param-type">string</td><td class="param-req">✓ Required</td><td class="param-desc">URL video TikTok</td></tr>
+            <tr><td class="param-name">url</td><td class="param-type">string</td><td class="param-req">✓ Required</td><td class="param-desc">URL Instagram</td></tr>
           </table>
           <div class="try-section">
             <div class="try-label">Try it</div>
@@ -1136,6 +1136,130 @@
   </section>
 
   <div class="divider"></div>
+  
+  <!-- Fake WhatsApp -->
+<div class="ep-card" onclick="toggleCard(this)">
+  <div class="ep-header">
+    <span class="method-badge method-both">GET/POST</span>
+    <span class="ep-path">/api/canvas/fakewa</span>
+    <span class="ep-desc">Fake WhatsApp Profile</span>
+    <span class="ep-chevron">▼</span>
+  </div>
+
+  <div class="ep-body">
+    <div class="params-label">Parameters</div>
+    <table class="params-table">
+      <tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr>
+      <tr>
+        <td class="param-name">pp</td>
+        <td class="param-type">string</td>
+        <td class="param-req">✓ Required</td>
+        <td class="param-desc">URL Profile Picture</td>
+      </tr>
+      <tr>
+        <td class="param-name">nama</td>
+        <td class="param-type">string</td>
+        <td class="param-req">✓ Required</td>
+        <td class="param-desc">Nama user</td>
+      </tr>
+      <tr>
+        <td class="param-name">tentang</td>
+        <td class="param-type">string</td>
+        <td class="param-req">✓ Required</td>
+        <td class="param-desc">Bio / About</td>
+      </tr>
+      <tr>
+        <td class="param-name">telepon</td>
+        <td class="param-type">string</td>
+        <td class="param-req">✓ Required</td>
+        <td class="param-desc">Nomor telepon</td>
+      </tr>
+    </table>
+
+    <div class="try-section">
+      <div class="try-label">Try it</div>
+
+      <div class="try-row">
+        <input class="try-input" placeholder="pp: https://image.jpg" data-key="pp" />
+      </div>
+
+      <div class="try-row">
+        <input class="try-input" placeholder="nama: Nama Kamu" data-key="nama" />
+      </div>
+
+      <div class="try-row">
+        <input class="try-input" placeholder="tentang: Hey there!" data-key="tentang" />
+      </div>
+
+      <div class="try-row">
+        <input class="try-input" placeholder="telepon: +62812xxxx" data-key="telepon" />
+      </div>
+
+      <div class="try-row">
+        <button class="try-btn"
+          onclick="sendGetMulti(this, '/api/canvas/fakewa', ['pp','nama','tentang','telepon'])">
+          ▶ Generate
+        </button>
+      </div>
+
+      <div class="response-box">
+        <div class="response-status">
+          <span class="status-dot"></span>
+          <span class="response-status-text"></span>
+        </div>
+        <button class="response-copy" onclick="copyResponse(this)">copy</button>
+        <pre class="response-pre"></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fake Afinitas ML-->
+<div class="ep-card" onclick="toggleCard(this)">
+  <div class="ep-header">
+    <span class="method-badge method-both">GET/POST</span>
+    <span class="ep-path">/api/canvas/fakeafinitasml</span>
+    <span class="ep-desc">Fake Afinitas ML</span>
+    <span class="ep-chevron">▼</span>
+  </div>
+
+  <div class="ep-body">
+    <div class="params-label">Parameters</div>
+    <table class="params-table">
+      <tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr>
+      <tr>
+        <td class="param-name">pp</td>
+        <td class="param-type">string</td>
+        <td class="param-req">✓ Required</td>
+        <td class="param-desc">URL Profile Picture</td>
+      </tr>
+    </table>
+
+    <div class="try-section">
+      <div class="try-label">Try it</div>
+
+      <div class="try-row">
+        <input class="try-input" placeholder="pp: https://image.jpg" data-key="pp" />
+      </div>
+
+      <div class="try-row">
+        <button class="try-btn"
+          onclick="sendGetMulti(this, '/api/canvas/fakeafinitasml', ['pp''])">
+          ▶ Generate
+        </button>
+      </div>
+
+      <div class="response-box">
+        <div class="response-status">
+          <span class="status-dot"></span>
+          <span class="response-status-text"></span>
+        </div>
+        <button class="response-copy" onclick="copyResponse(this)">copy</button>
+        <pre class="response-pre"></pre>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- ═══ PROKER SECTION ═══ -->
   <section id="proker">

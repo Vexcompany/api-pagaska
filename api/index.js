@@ -35,6 +35,10 @@ app.all('/api/search/lyric',      require('./search/lyric'));
 app.all('/api/search/tiktok',     require('./search/tiktok'));
 app.all('/api/search/telegram',   require('./search/telegram'));
 
+// ── Canvas Routes ──────────────────────────────────────────────
+app.all('/api/canvas/fakewa',    require('./canvas/fakewa'));
+app.all('/api/camvas/fakeafinitasml',      require('./canvas/fakeafinitasml'))
+
 // ── Proker Routes ──────────────────────────────────────────
 app.all('/api/proker/haripenting', require('./proker/haripenting'));
 

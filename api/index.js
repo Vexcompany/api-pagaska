@@ -33,6 +33,7 @@ app.all('/api/search/wikipedia',  require('./search/wikipedia'));
 app.all('/api/search/chord',      require('./search/chord'));
 app.all('/api/search/lyric',      require('./search/lyric'));
 app.all('/api/search/tiktok',     require('./search/tiktok'));
+app.all('/api/search/ytsearch',     require('./search/ytsearch'));
 app.all('/api/search/telegram',   require('./search/telegram'));
 
 // ── Canvas Routes ──────────────────────────────────────────────

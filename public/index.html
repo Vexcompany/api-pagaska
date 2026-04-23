@@ -1107,6 +1107,31 @@
         </div>
       </div>
 
+      <!-- YT Search -->
+      <div class="ep-card" onclick="toggleCard(this)">
+        <div class="ep-header">
+          <span class="method-badge method-get">GET</span>
+          <span class="ep-path">/api/search/ytsearch</span>
+          <span class="ep-desc">Search YouTube</span>
+          <span class="ep-chevron">▼</span>
+        </div>
+        <div class="ep-body">
+          <div class="params-label">Parameters</div>
+          <table class="params-table">
+            <tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr>
+            <tr><td class="param-name">q</td><td class="param-type">string</td><td class="param-req">✓ Required</td><td class="param-desc">Judul Video</td></tr>
+          </table>
+          <div class="try-section">
+            <div class="try-label">Try it</div>
+            <div class="try-row">
+              <input class="try-input" placeholder="q: Indonesia Raya" data-key="q" />
+              <button class="try-btn" onclick="sendGet(this, '/api/search/ytsearch', 'q')">▶ Send</button>
+            </div>
+            <div class="response-box"><div class="response-status"><span class="status-dot"></span><span class="response-status-text"></span></div><button class="response-copy" onclick="copyResponse(this)">copy</button><pre class="response-pre"></pre></div>
+          </div>
+        </div>
+      </div>
+
       <!-- Telegram -->
       <div class="ep-card" onclick="toggleCard(this)">
         <div class="ep-header">

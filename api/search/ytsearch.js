@@ -1,6 +1,6 @@
 const yts = require('yt-search');
 
-module.exports = {
+module.exports = async (req, res) => {
     category: 'Search',
     params: ['q'],
     async run(req, res) {

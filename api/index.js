@@ -36,10 +36,6 @@ app.all('/api/search/tiktok',     require('./search/tiktok'));
 app.all('/api/search/ytsearch',     require('./search/ytsearch'));
 app.all('/api/search/telegram',   require('./search/telegram'));
 
-// ── Canvas Routes ──────────────────────────────────────────────
-app.all('/api/canvas/fakewa',    require('./canvas/fakewa'));
-app.all('/api/camvas/fakeafinitasml',      require('./canvas/fakeafinitasml'))
-
 // ── Proker Routes ──────────────────────────────────────────
 app.all('/api/proker/haripenting', require('./proker/haripenting'));
 
@@ -70,6 +66,7 @@ app.get('/api', (req, res) => {
         { path: '/api/search/chord',     method: 'GET', params: ['q'] },
         { path: '/api/search/lyric',     method: 'GET', params: ['q'] },
         { path: '/api/search/tiktok',    method: 'GET', params: ['q', 'count?'] },
+        { path: '/api/search/ytsearch',     method: 'GET', params: ['q'] },
         { path: '/api/search/telegram',  method: 'GET', params: ['q'] }
       ],
       proker: [
